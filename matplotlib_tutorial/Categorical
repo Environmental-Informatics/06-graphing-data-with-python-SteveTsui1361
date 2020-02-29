@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Feb 25 09:40:33 2020
+
+@author: xu1361
+"""
+
+import matplotlib.pyplot as plt
+names = ['a', 'b', 'c']
+values = [1, 10, 100]
+
+plt.figure(figsize=(9, 3))
+plt.subplot(131)
+plt.bar(names, values)
+plt.ylabel('num')
+plt.xlabel('mane')
+plt.subplot(132)
+plt.scatter(names, values)
+plt.subplot(133)
+plt.plot(names, values)
+plt.suptitle('Categorical plotting')
+plt.show()
